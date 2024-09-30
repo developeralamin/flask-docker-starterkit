@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 
 services:
   flaskdockerstarterkit:
@@ -8,7 +8,7 @@ services:
       dockerfile: ./Dockerfile
       target: debug
     ports:
-      - 5000:5000
+      - 5500:5500
     volumes:
       - .:/flask_starterkit:cached
     env_file: .env
@@ -19,7 +19,7 @@ services:
       dockerfile: ./Dockerfile
       target: debugger
     ports:
-      - 5000:5000
+      - 5500:5500
       - 5678:5678
     volumes:
       - .:/flask_starterkit:cached
